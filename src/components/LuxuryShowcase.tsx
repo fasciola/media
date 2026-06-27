@@ -5,7 +5,7 @@ export default function LuxuryShowcase() {
   return (
     <section
       id="showcase"
-      className="relative bg-[#F4F2EA] text-[#070707] py-24 md:py-32 overflow-hidden px-6 md:px-12"
+      className="relative bg-white text-[#070707] py-24 md:py-32 overflow-hidden px-6 md:px-12"
     >
       <div className="max-w-7xl mx-auto relative">
         
