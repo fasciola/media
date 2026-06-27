@@ -5,7 +5,7 @@ export default function LuxuryShowcase() {
   return (
     <section
       id="showcase"
-      className="relative bg-white text-[#070707] py-24 md:py-32 overflow-hidden px-6 md:px-12"
+      className="relative bg-[#F1F1F3] text-[#070707] py-24 md:py-32 overflow-hidden px-6 md:px-12"
     >
       <div className="max-w-7xl mx-auto relative">
         
@@ -28,7 +28,6 @@ export default function LuxuryShowcase() {
           
           {/* LEFT COLUMN CALLOUTS (Upper & Lower Left) */}
           <div className="lg:col-span-3 flex flex-col justify-between space-y-12 lg:space-y-24 text-left order-2 lg:order-1">
-            {/* Upper Left */}
             <div className="space-y-3">
               <span className="text-xs font-mono uppercase text-[#C9A84C] font-semibold tracking-wider block">01 / CONCEPT</span>
               <h3 className="text-lg font-tech font-bold text-[#070707] tracking-tight">Visual Storytelling</h3>
@@ -37,7 +36,6 @@ export default function LuxuryShowcase() {
               </p>
             </div>
 
-            {/* Lower Left */}
             <div className="space-y-3">
               <span className="text-xs font-mono uppercase text-[#C9A84C] font-semibold tracking-wider block">02 / ATTENTION</span>
               <h3 className="text-lg font-tech font-bold text-[#070707] tracking-tight">Designed for Attention</h3>
@@ -47,10 +45,8 @@ export default function LuxuryShowcase() {
             </div>
           </div>
 
-          {/* CENTRAL IMAGE COLUMN (Preserving transparency, containment and no overlays) */}
           <div className="lg:col-span-6 flex flex-col items-center justify-center relative order-1 lg:order-2 my-8 lg:my-0">
             <div className="relative w-full max-w-[420px] sm:max-w-[480px] flex items-center justify-center">
-              {/* Image Container with precise styling */}
               <img
                 src={perfumeImg}
                 alt="Luxury Fragrance Visual Concept"
@@ -58,20 +54,15 @@ export default function LuxuryShowcase() {
                 className="w-full h-auto object-contain select-none filter drop-shadow-[0_15px_30px_rgba(0,0,0,0.06)]"
                 style={{ maxHeight: '460px' }}
               />
-              
-              {/* Very subtle soft organic shadow below the floating island roots */}
               <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 w-48 h-4 bg-[#070707]/5 blur-xl rounded-full"></div>
             </div>
             
-            {/* Honest concept label */}
             <span className="text-[10px] font-mono text-[#A7A39A] uppercase tracking-[0.2em] mt-6">
               Luxury Fragrance Visual Concept
             </span>
           </div>
 
-          {/* RIGHT COLUMN CALLOUTS (Upper & Lower Right) */}
           <div className="lg:col-span-3 flex flex-col justify-between space-y-12 lg:space-y-24 text-left order-3">
-            {/* Upper Right */}
             <div className="space-y-3">
               <span className="text-xs font-mono uppercase text-[#C9A84C] font-semibold tracking-wider block">03 / POSITION</span>
               <h3 className="text-lg font-tech font-bold text-[#070707] tracking-tight">Premium Positioning</h3>
@@ -80,7 +71,6 @@ export default function LuxuryShowcase() {
               </p>
             </div>
 
-            {/* Lower Right */}
             <div className="space-y-3">
               <span className="text-xs font-mono uppercase text-[#C9A84C] font-semibold tracking-wider block">04 / REVENUE</span>
               <h3 className="text-lg font-tech font-bold text-[#070707] tracking-tight">Built to Convert</h3>
@@ -89,10 +79,8 @@ export default function LuxuryShowcase() {
               </p>
             </div>
           </div>
-
         </div>
 
-        {/* Bottom content blocks - three columns */}
         <div className="mt-20 lg:mt-28 grid grid-cols-1 md:grid-cols-3 gap-8 pt-12 border-t border-[#070707]/10">
           <div className="space-y-2">
             <h4 className="font-tech font-bold text-base text-[#070707]">Product Worlds</h4>
@@ -116,7 +104,6 @@ export default function LuxuryShowcase() {
           </div>
         </div>
 
-        {/* Action Button Scrolling down to Portfolio */}
         <div className="mt-16 flex justify-center">
           <a
             href="#work"
@@ -126,7 +113,6 @@ export default function LuxuryShowcase() {
             <ArrowDown size={14} className="group-hover:translate-y-0.5 transition-transform duration-250" />
           </a>
         </div>
-
       </div>
     </section>
   );
