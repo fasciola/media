@@ -1,6 +1,5 @@
 import { ArrowRight } from 'lucide-react';
-
-const HERO_VIDEO_URL = 'https://cdn.jsdelivr.net/gh/fasciola/app4pillars@main/public/contact.mp4';
+import heroVideo from '../assets/images/contact.mp4';
 
 export default function Hero() {
   const ctaLink = 'https://wa.me/971581416980?text=Hello%203Media%2C%20I%20would%20like%20to%20grow%20my%20business.';
@@ -18,7 +17,6 @@ export default function Hero() {
       id="home"
       className="relative flex min-h-screen items-center justify-center overflow-hidden bg-[#070707] pb-16 pt-24"
     >
-      {/* Cinematic background video shared from the app4pillars project */}
       <div className="absolute inset-0 z-0 overflow-hidden bg-[#070707]">
         <video
           className="h-full w-full object-cover object-center"
@@ -26,19 +24,18 @@ export default function Hero() {
           muted
           loop
           playsInline
-          preload="metadata"
+          preload="auto"
+          disablePictureInPicture
           aria-hidden="true"
         >
-          <source src={HERO_VIDEO_URL} type="video/mp4" />
+          <source src={heroVideo} type="video/mp4" />
         </video>
 
-        {/* Dark overlay preserves legibility over every video frame */}
         <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(7,7,7,0.94)_0%,rgba(7,7,7,0.80)_32%,rgba(7,7,7,0.46)_58%,rgba(7,7,7,0.66)_100%)]" />
         <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(7,7,7,0.34)_0%,transparent_28%,rgba(7,7,7,0.54)_100%)]" />
         <div className="absolute inset-0 opacity-[0.08] bg-[linear-gradient(to_right,rgba(201,168,76,0.5)_1px,transparent_1px),linear-gradient(to_bottom,rgba(201,168,76,0.35)_1px,transparent_1px)] bg-[size:4rem_4rem]" />
       </div>
 
-      {/* Main Hero Content */}
       <div className="relative z-10 mx-auto flex w-full max-w-7xl flex-col justify-center px-6 md:px-12">
         <div className="max-w-3xl text-left">
           <div className="mb-6 inline-flex items-center space-x-2">
